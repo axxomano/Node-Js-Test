@@ -3,10 +3,9 @@ const { Sequelize } = require('sequelize');
 const sequelize = new Sequelize('sharpenerBlog', 'root', 'admin', {
   host: 'localhost',
   dialect: 'mysql',
-  logging: false, // Set to true to see SQL queries in console
+  logging: false,
 });
 
-// Test the database connection
 async function testConnection() {
   try {
     await sequelize.authenticate();

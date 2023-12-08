@@ -4,7 +4,6 @@ const router = express.Router();
 // Import the controllers
 const blogController = require('../controllers/blogController');
 
-// Define routes
 router.get('/', blogController.getHomePage);
 
 router.post('/create-post', blogController.createPost);
